@@ -6,7 +6,13 @@ namespace _04.VacationBooksList
     {
         static void Main()
         {
+            var pagesInBook = int.Parse(Console.ReadLine());
+            var pagesPerHour = int.Parse(Console.ReadLine());
+            var daysPerBook = int.Parse(Console.ReadLine());
 
+            var hoursPerDay = (pagesInBook / pagesPerHour) / daysPerBook;
+
+            Console.WriteLine(hoursPerDay);
         }
     }
 }
